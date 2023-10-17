@@ -1,0 +1,145 @@
+.fullPageContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(31, 31, 31, 0.5);
+    backdrop-filter: blur(5px);
+
+    overflow: hidden;
+
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+}
+
+.focusCardContainer {
+    width: 700px;
+    height: 519px;
+    background-color: #1F1F1F;
+    box-shadow: 0px 3px 6px #0000004D;
+    overflow: auto;
+    border-radius: 20px;
+    position: relative;
+
+    padding-bottom: 25px;
+}
+
+.focusCardContainer::-webkit-scrollbar {
+    background: #1F1F1F;
+    border-radius: 20px;
+    width: 8px;
+}
+
+.focusCardContainer::-webkit-scrollbar-thumb {
+    background: #393C3E;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.focusCardContainer::-webkit-scrollbar-track {
+    background: #1F1F1F;
+}
+
+.name {
+    background-color: #1F1F1F;
+    font-family: "Writable Story", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    height: 30%;
+    padding-top: 0px;
+    z-index: 1;
+    padding-top: 50px;
+    margin: 0px;
+}
+
+
+.section {
+    font-family: "Brandon Grotesque";
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
+    letter-spacing: 1.05px;
+
+    padding-left: 60px;
+}
+
+.item {
+    font-family: "Brandon Grotesque";
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+}
+
+.circleLi {
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.stepLi{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+hr{
+    width: 80%;
+    border-color: #0000004D;
+}
+
+p{
+    padding-left: 60px;
+}
+
+#deleteIcon{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+
+    z-index: 1;
+}
+
+/* Media Query for Phone display */
+@media (max-width: 767px){
+    
+    .focusCardContainer {
+        width: 80%;
+        height: 70%;
+    }
+    
+    .name {
+        font-size: 45px;
+        padding-top: 15px;
+    }
+    
+    
+    .section {
+        font-size: 18px;
+    }
+    
+    .item {
+        font-size: 14px;
+    }
+    
+    #deleteIcon{
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+    
+        z-index: 1;
+    }
+}

@@ -1,0 +1,205 @@
+body {
+    background-size:auto;
+    margin: 0px;
+}
+
+.heroContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 51px;
+    opacity: 1;
+}
+
+#header {
+    font-family: "Writable Story", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+#hero_description {
+    font-family: "Brandon Grotesque";
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Media Query for Desktop display */
+@media (min-width: 1024px) {
+
+    body{
+        background-image: url("https://assets.24g.com/public/2022-frontend-test-project/bg_desktop.png");
+    }
+
+    #logo {
+        margin-top: 70px;
+        margin-left: 70px;
+    }
+
+    #header {
+        width: 600px;
+        height: 117px;
+    
+        margin-bottom: 25px;
+    }
+
+    #hero_description {
+    
+        width: 590px;
+        margin-bottom: 60px;
+        padding-left: 0px;
+    
+    }
+
+    .frontImg {
+        width: 220px;
+        height: 220px;
+        opacity: 1;
+        transition: transform 0.3s;
+    }
+    
+    .backImg {
+        width: 220px;
+        height: 220px;
+        transform: translateY(-20px);
+        transition: transform 0.3s;
+        opacity: 1;
+    }
+    
+    .cardGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .cardContainer {
+        margin-bottom: 40px;
+    }
+}
+
+/* Media Query for Tablet display */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+    body{
+        background-image: url("https://assets.24g.com/public/2022-frontend-test-project/bg_tablet.png");
+    }
+
+    #logo {
+        margin-top: 70px;
+        margin-left: 70px;
+    }
+
+    #header {
+        width: 600px;
+        height: 117px;
+    
+        margin-bottom: 25px;
+    }
+
+    #hero_description {
+    
+        width: 590px;
+        margin-bottom: 60px;
+        padding-left: 0px;
+    
+    }
+
+    .frontImg {
+        width: 220px;
+        height: 220px;
+        opacity: 1;
+        transition: transform 0.3s;
+    }
+    
+    .backImg {
+        width: 220px;
+        height: 220px;
+        transform: translateY(-20px);
+        transition: transform 0.3s;
+        opacity: 1;
+    }
+    
+    .cardGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .cardContainer {
+        margin-left: -20px;
+        margin-bottom: 40px;
+        width: calc(33% - 25px);
+    }
+}
+
+/* Media Query for Phone display */
+@media (max-width: 767px) {
+
+    body{
+        background-image: url("https://assets.24g.com/public/2022-frontend-test-project/bg_mobile.png");
+    }
+
+    #logo {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #header {
+        width: 300px;
+        height: 50px;
+    
+        margin-bottom: 25px;
+    }
+
+    #hero_description {
+    
+        width: 300px;
+        margin-top: 300px;
+        margin-bottom: 60px;
+        padding-left: 0px;
+    
+    }
+
+    .frontImg {
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+        transition: transform 0.3s;
+    }
+    
+    .backImg {
+        width: 150px;
+        height: 150px;
+        transform: translateY(-20px);
+        transition: transform 0.3s;
+        opacity: 1;
+    }
+    
+    .cardGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .cardContainer {
+        margin-left: -7px;
+        margin-bottom: 40px;
+        width: calc(49% - 12px);
+    }
+}
